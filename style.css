@@ -1,8 +1,17 @@
-html,
-body,
-* {
+body {
   padding: 0;
   margin: 0;
+  font-size: 62.5%;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.child {
+  font-size: 2rem;
+  border: ridge #222222 0.5rem;
   box-sizing: border-box;
-  font-size: 62.5%; /* Normally 100% is 16px, we want the size to be 10px so we do 62.5% */
+  width: 25%;
+  text-align: center;
 }
