@@ -3,15 +3,22 @@ body {
   margin: 0;
   font-size: 62.5%;
 }
-.box {
+.parent {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 .child {
   font-size: 2rem;
   border: ridge #222222 0.5rem;
   box-sizing: border-box;
-  width: 25%;
+  width: 30%;
   text-align: center;
+  padding-bottom: 30rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 5rem;
+  text-decoration: underline;
 }
