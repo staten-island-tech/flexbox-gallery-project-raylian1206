@@ -9,16 +9,21 @@ body {
   justify-content: space-evenly;
 }
 .child {
-  font-size: 2rem;
   border: ridge #222222 0.5rem;
   box-sizing: border-box;
   width: 30%;
   text-align: center;
-  padding-bottom: 30rem;
+  padding-bottom: 25rem;
+  margin-bottom: 1.5rem;
 }
 
 .title {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+
+.header {
+  font-size: 2rem;
   text-decoration: underline;
 }
