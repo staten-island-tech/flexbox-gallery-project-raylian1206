@@ -10,6 +10,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-evenly;
   color: aliceblue;
+  align-items: stretch;
 }
 
 .child {
@@ -18,9 +19,9 @@ body {
   width: 30%;
   text-align: center;
   padding-bottom: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.2rem;
   border-radius: 2rem;
-  box-shadow: 0.5rem 0.5rem 1rem rgb(75, 63, 102);
+  box-shadow: 0rem 0rem 0.7rem 0.4rem rgb(123, 99, 180);
 }
 
 .title {
@@ -29,10 +30,11 @@ body {
   text-decoration: underline;
   font-family: "Amatic SC", cursive;
   color: lightcyan;
+  margin-top: 2.2rem;
 }
 
 .header {
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-decoration: underline;
   font-family: "Amatic SC", cursive;
 }
