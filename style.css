@@ -2,21 +2,25 @@ body {
   padding: 0;
   margin: 0;
   font-size: 62.5%;
+  background-color: #1d1c1c;
 }
 
 .parent {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  color: aliceblue;
 }
 
 .child {
-  border: ridge #222222 0.5rem;
+  border: solid lavender 0.5rem;
   box-sizing: border-box;
   width: 30%;
   text-align: center;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   margin-bottom: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(75, 63, 102);
 }
 
 .title {
@@ -24,6 +28,7 @@ body {
   font-size: 5.5rem;
   text-decoration: underline;
   font-family: "Amatic SC", cursive;
+  color: lightcyan;
 }
 
 .header {
@@ -37,6 +42,12 @@ img {
   width: 90%;
 }
 
+@font-face {
+  font-family: customfont;
+  src: url(font/VCR_OSD_MONO_1.001.ttf);
+}
+
 p {
   font-size: 1.5rem;
+  font-family: customfont;
 }
