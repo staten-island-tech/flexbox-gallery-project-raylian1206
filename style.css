@@ -53,3 +53,21 @@ p {
   font-size: 1.5rem;
   font-family: customfont;
 }
+
+.clickme {
+  font-family: customfont;
+  src: url(font/VCR_OSD_MONO_1.001.ttf);
+  border: 0;
+  line-height: 1rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  text-align: center;
+  text-shadow: 1rem 1rem 1rem #222222;
+  border-radius: 1rem;
+  box-shadow: inset 1rem 1rem 2rem lavender, inset -1rem -1rem violet;
+}
+
+.clickme:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
