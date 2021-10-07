@@ -1,10 +1,14 @@
-body {
+html,
+body, {
   padding: 0;
   margin: 0;
   font-size: 62.5%;
-  background-color: #1d1c1c;
+  box-sizing: border-box ;
 }
 
+body {
+  background-color: #222222;
+}
 .parent {
   display: flex;
   flex-flow: row wrap;
@@ -19,10 +23,9 @@ body {
   text-align: center;
   padding-bottom: 2rem;
   margin-bottom: 2.2rem;
-  border-radius: 2rem;
+  border-radius: 3rem;
   box-shadow: 0rem 0rem 0.7rem 0.4rem rgb(168, 150, 211);
-  flex-grow: 0;
-  flex-shrink: 0;
+  background-color: #2f2f2f;
 }
 
 .title {
@@ -32,6 +35,7 @@ body {
   font-family: "Amatic SC", cursive;
   color: lightcyan;
   margin-top: 2.2rem;
+  animation: 3s linear 1s infinite alternate slidein;
 }
 
 .header {
@@ -59,14 +63,15 @@ img {
 
 .clickme {
   font-family: customfont;
-  bottom: 0rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 2.5rem;
   border: 1rem;
   box-shadow: inset -0.5rem -0.5rem 1rem orchid,
     inset 0rem 0rem 0.5rem 0.5rem lavender;
   transition: 0.15s;
+  width: 8rem;
+  height: 2.5rem;
 }
 
 .clickme:active {
@@ -78,13 +83,13 @@ img {
 }
 
 img:hover {
-  transform: scale(1.25);
+  transform: skew(5deg, 10deg);
   transition: 0.5s;
 }
 
 .header:hover {
   transform: rotate(180deg);
-  transition: 1s;
+  transition: 0.7s;
 }
 
 .info:hover {
@@ -93,6 +98,19 @@ img:hover {
 }
 
 .title:hover {
-  transform: rotate(180deg);
-  transition: 1s;
+  transform: translate(0, 1.5rem) scale(1.5);
+  transition: 0.5s;
+}
+
+@keyframes loading {
+  0% {
+    left: 50%;
+    bottom: 10%;
+    background-color: red;
+
+  100% {
+    left: 50%;
+    bottom: 10%;
+    background-color: blue;
+  }
 }
