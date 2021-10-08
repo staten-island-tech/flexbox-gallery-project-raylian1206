@@ -1,14 +1,17 @@
 html,
-body, {
+body {
   padding: 0;
   margin: 0;
   font-size: 62.5%;
-  box-sizing: border-box ;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #222222;
+  animation-duration: 2.5s;
+  animation-name: loading;
 }
+
 .parent {
   display: flex;
   flex-flow: row wrap;
@@ -21,7 +24,7 @@ body {
   border: solid lavender 0.5rem;
   width: 30%;
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   margin-bottom: 2.2rem;
   border-radius: 3rem;
   box-shadow: 0rem 0rem 0.7rem 0.4rem rgb(168, 150, 211);
@@ -30,16 +33,16 @@ body {
 
 .title {
   text-align: center;
-  font-size: 5.5rem;
+  font-size: 10rem;
   text-decoration: underline;
   font-family: "Amatic SC", cursive;
   color: lightcyan;
   margin-top: 2.2rem;
-  animation: 3s linear 1s infinite alternate slidein;
+  padding-bottom: 2rem;
 }
 
 .header {
-  font-size: 4rem;
+  font-size: 6rem;
   text-decoration: underline;
   font-family: "Amatic SC", cursive;
 }
@@ -55,10 +58,11 @@ img {
 }
 
 .info {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: customfont;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
   height: 2rem;
+  padding-top: 1rem;
 }
 
 .clickme {
@@ -83,8 +87,8 @@ img {
 }
 
 img:hover {
-  transform: skew(5deg, 10deg);
-  transition: 0.5s;
+  transform: matrix(0.5, 0.6, 0.7, 0.8, 0.9, 1);
+  transition: 1s;
 }
 
 .header:hover {
@@ -93,24 +97,28 @@ img:hover {
 }
 
 .info:hover {
-  transform: scale(0.75);
+  transform: skew(5deg, 10deg);
   transition: 0.5s;
 }
 
 .title:hover {
-  transform: translate(0, 1.5rem) scale(1.5);
+  transform: translate(0, 3rem);
   transition: 0.5s;
 }
 
 @keyframes loading {
-  0% {
-    left: 50%;
-    bottom: 10%;
-    background-color: red;
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
 
-  100% {
-    left: 50%;
-    bottom: 10%;
-    background-color: blue;
+  75% {
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
