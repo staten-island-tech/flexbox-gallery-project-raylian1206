@@ -76,6 +76,7 @@ img {
   transition: 0.15s;
   width: 8rem;
   height: 2.5rem;
+  background-color: violet;
   position: relative;
 }
 
