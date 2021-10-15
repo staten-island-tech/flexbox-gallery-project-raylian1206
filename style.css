@@ -126,6 +126,17 @@ img:hover {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  html,
+  body,
+  * {
+    font-size: 62.5%;
+  }
+  .child {
+    width: 30%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   html,
   body,
